@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Integration with AOS library.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function polkadrupal_help($path, $arg) {
+  switch ($path) {
+  case 'admin/help#polkadrupal':
+    return '<p>' . t('<a href="@polkadrupal" target="_blank">PolkaDrupal</a> is a PolkaDot implementation for Drupal.', array(
+      '@polkadrupal' => 'https://github.com/DarkPayCoin/polkadrupal',
+    )) . '</p>';
+  }
+}
+
+/**
+* Implements hook_page_attachments().
+*/
+function polkadrupal_page_attachments(array &$attachments) {
+  // Attach PolkaDrupal library to all pages.
+  //$attachments['#attached']['library'][] = 'polkadrupal/polkadrupal_js';
+  $attachments['#attached']['library'][] = 'polkadrupal/polkadrupal';
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function polkadrupal_theme($existing, $type, $theme, $path) {
+
+ return array('polkadrupal_account_template' =>
+  array(
+    'variables' => array(
+    'block_txt' => NULL,
+    'title' => NULL,
+    
+    ),
+   ),
+  );
+
+  }
+  

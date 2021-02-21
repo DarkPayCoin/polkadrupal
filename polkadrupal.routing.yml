@@ -1,0 +1,7 @@
+polkadrupal.content:
+  path: '/polkadrupal'
+  defaults:
+    _controller: '\Drupal\polkadrupal\Controller\PolkadrupalController::content'
+    _title: 'Polkadrupal'
+  requirements:
+    _permission: 'access content'

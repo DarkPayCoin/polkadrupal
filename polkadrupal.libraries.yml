@@ -1,0 +1,17 @@
+polkadrupal:
+  version: VERSION
+  css:
+    theme:
+      css/polkadrupal.css: {}
+  js:
+    js/bundle-dot.js: {}
+    
+polkadrupal_js:
+  version: VERSION
+  js:
+    js/application.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

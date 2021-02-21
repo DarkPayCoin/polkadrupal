@@ -1,0 +1,8 @@
+name: PolkaDrupal Module
+description: Integrates PolkaDot with Drupal framework.
+package: PolkaDrupal
+type: module
+version: 1.0.0
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - block

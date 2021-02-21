@@ -1,0 +1,10 @@
+{# polkadrupal/templates/polkadrupal_account_template.html.twig #}
+  <div style="margin-top:10px"><button type="submit" class="btn btn-primary" id="web3login">Connect to Polkadot</button></div>
+  <div id="web3messageSignDiv" style="display: none;">
+  <h6>{{ block_txt }}</h6>
+    <select name="web3account" id="web3accounts"></select>
+    <input type="text" id="messageToSign" name="messageToSign" required
+       minlength="4" maxlength="160" size="60" value="Sample message to sign.">
+    <button type="submit" class="btn btn-primary" id="web3messageSign">Sign message</button>
+</div>
+

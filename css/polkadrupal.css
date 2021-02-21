@@ -1,0 +1,16 @@
+/* PolkaDrupal styles */
+#web3messageSignDiv {
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+
+#web3messageSignDiv select, #web3messageSignDiv input{
+    padding: .3em .5em;
+    font-size: 1.05em;
+    margin: 0.3em;
+}
+
+
+#web3messageSignDiv select span {
+    font-weight: bold;
+}
